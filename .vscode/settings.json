@@ -1,5 +1,5 @@
 {
-    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.showContextMenu": true,
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.message.error.show": false,
@@ -47,15 +47,15 @@
     ],
     "latex-workshop.latex.recipes": [
         {
-            "name": "XeLaTeX",
-            "tools": [
-                "xelatex"
-            ]
-        },
-        {
             "name": "PDFLaTeX",
             "tools": [
                 "pdflatex"
+            ]
+        },
+        {
+            "name": "XeLaTeX",
+            "tools": [
+                "xelatex"
             ]
         },
         {
