@@ -5,6 +5,7 @@
 % --- Package imports ---
 
 \usepackage{hyperref, enumitem, longtable, amsmath, array}
+\usepackage{tabularx}
 
 % --- Page layout settings ---
 
@@ -18,7 +19,7 @@
 
 % Indent for item space set to 0
 \setlist[enumerate]{leftmargin=*}
-\setlist[itemize]{leftmargin=*}
+\setlist[itemize]{leftmargin=*, after=\leavevmode\vspace*{-1\baselineskip}}
 
 % Set link colors
 \usepackage[dvipsnames]{xcolor}
@@ -72,16 +73,18 @@
 % --- Name and contact information ---
 
 \begin{SectionTable}{\Huge Ge Zhang} & 
-gezhang24@outlook.com$\;\boldsymbol{\cdot}\;$ \newline
+gezhang24@outlook.com$\;\boldsymbol\;$ \newline
 (0086)199-1654-4595
 \end{SectionTable}
 
 % --- Section: Research interests ---
-
-\begin{SectionTable}{\headingfont Research interests}
-& Metabolic diseases including atherosclerosis, obesity, and diabetes.
+\begin{SectionTable}{\headingfont Research Interests}
+&\begin{itemize}[nosep, label={\textbullet}, parsep=1pt, noitemsep, topsep=0pt, before=\leavevmode\vspace*{-1\baselineskip}]
+	\item Molecular mechanism of metabolic diseases including atherosclerosis, obesity, and diabetes.
+	\item Tumor development and microenvironment.
+	\item Molecular mechanism of platelet activation.
+\end{itemize}
 \end{SectionTable}
-% --- Section: Research interests2 ---
 
 % --- Section: Education ---
 
@@ -89,14 +92,14 @@ gezhang24@outlook.com$\;\boldsymbol{\cdot}\;$ \newline
 2018 -- 2021 & 
 \textbf{Fudan University} -- Shanghai, China \newline
 MA in Biochemistry and Molecular Biology \newline 
-Focus on ======== \newline 
+Focus on the mechanism of platelet activation. \newline 
 Mentor: Si Zhang. \textit{GPA: 3.2} \\
 
 2014 -- 2018 & 
 \textbf{Nantong University} -- Nantong, China \newline
 BA in Biotechnology - Animals \newline 
-Focus on ======== \newline 
-Mentor: Sheyu Lin. \textit{GPA: X.YZ} \\
+Focus on tumor genetics and epigenetics. \newline 
+Mentor: Sheyu Lin. \textit{GPA: 3.6} \\
 
 % --- Un-comment the next few lines if you want to include some courses you've taken ---
 
@@ -110,7 +113,7 @@ Mentor: Sheyu Lin. \textit{GPA: X.YZ} \\
 
 % --- Section: Awards, scholarships, etc ---
 
-\begin{SectionTableSingleSpace}{\headingfont Honors and scholarships}
+\begin{SectionTableSingleSpace}{\headingfont Honors \& Scholarships}
 2020 & 
 Fudan University, Merit Scholarship \\
 
@@ -148,37 +151,36 @@ S. Lin*, G. Zhang*, Y. Zhao, D. Shi, Q. Ye, Y. Li, S. Wang. \newline
 
 % --- Section: Research experience ---
 
-\begin{SectionTable}{\headingfont Research experience}
+\begin{SectionTable}{\headingfont Research Experience}
 2018 -- 2021 &
 \textbf{The role of X in thrombopoiesis and platelet granule secretion} \newline
 Mentor: Si Zhang (Fudan University)
 \begin{enumerate}
-	\item Investigated the mechanism of platelet count increase due to deficiency of X: Conducted analysis using various techniques including flow cytometry, transcriptome sequencing, and western blot to determine the effect of X deficiency on megakaryocyte proliferation and maturity. Results showed increased proliferation and advanced maturity of megakaryocytes, leading to elevated platelet count.
-	\item The deficiency of X causes a decrease in platelet particle release: Through flow cytometry and ELISA analysis, it was determined that the loss of X resulted in a significant decrease in the release of platelet particles, including $\alpha$ granules, dense granules and lysosomes.
+	\item Investigated the mechanism of platelet count increase due to deficiency of X: Conducted analysis using various techniques including flow cytometry, transcriptome sequencing, and western blot to determine the effect of X deficiency on megakaryocyte proliferation, apoptosis and maturity. Results showed increased proliferation and advanced maturity of megakaryocytes, leading to elevated platelet count.
+	\item The deficiency of X caused a decrease in platelet particle release: Through flow cytometry and ELISA analysis, it was determined that the loss of X resulted in a significant decrease in the release of platelet particles, including $\alpha$ granules, dense granules and lysosomes.
 	\item Flotillin-2's interaction with X was determined: Interaction between X and flotillin-2 was confirmed through IP by anti-X antibody and mass spectrometry analysis, which was further verified through IP by anti-flotillin-2 antibody and immunofluorescence experiments. The interacting domains were identified through truncated body construction and protein structure simulation.
-	\item Investigated the impact of X on chemotherapy: This section investigated the correlation between platelet activation and X expression in clinical chemotherapy patients. Furthermore,  the effects of chemotherapy drugs on megakaryocyte proliferation, platelet count, and activation were explored in mouse models.
+	\item Investigated the impact of X on chemotherapy: We investigated the correlation between platelet activation and X expression in clinical chemotherapy patients. Furthermore,  the effects of chemotherapy drugs on megakaryocyte proliferation, platelet count, and activation were explored in mouse models.
 \end{enumerate} \\
 
 2018 -- 2021 &
 \textbf{The role of Sphingomyelin synthase 2 (SMS2) in platelet activation and its clinical significance} \newline
-Mentor:  Si Zhang (Fudan University).
+Mentor:  Si Zhang (Fudan University)
 \begin{enumerate}
-	\item Weakening of thrombus formation in vivo due to SMS2 deficiency: Our results demonstrate the significant role of SMS2 in thrombosis and hemostasis as evidenced by FeCl3-induced thrombus formation in mouse mesenteric and tail bleeding models.
+	\item Weakening of thrombus formation in vivo due to SMS2 deficiency: Our results demonstrated the significant role of SMS2 in thrombosis and hemostasis as evidenced by FeCl3-induced thrombus formation in mouse mesenteric and tail bleeding models.
 	\item Adherence to informed consent protocols was maintained and blood samples were collected.
 \end{enumerate} \\
 
 2020 -- 2021 &
 \textbf{Activation of Platelet NLRP3 Inflammasome in Crohn's Disease} \newline
-Mentor: Si Zhang (Fudan University). 
+Mentor: Si Zhang (Fudan University) 
 \begin{enumerate}
 	\item The manuscript was completed through a comprehensive analysis and interpretation of relevant data.
-	\item Investigated the assembly of platelet NLRP3 inflammasome in patients with active Crohn's Disease (CD) and its correlation with platelet hyperactivity. Real-time PCR, western blot, flow cytometry (FCM), ELISA, co-immunoprecipitation
-	\item and immunofluorescence experiments were conducted to uncover the results. Results suggest that the ROS-NLRP3 inflammasome-interleukin-1$\beta$-axis may contribute to platelet hyperactivity in active CD. 
+	\item Investigated the assembly of platelet NLRP3 inflammasome in patients with active Crohn's Disease (CD) and its correlation with platelet hyperactivity. Real-time PCR, western blot, flow cytometry, ELISA, co-IP and immunofluorescence experiments were conducted to uncover the results. Results suggest that the ROS-NLRP3 inflammasome-interleukin-1$\beta$-axis may contribute to platelet hyperactivity in active CD. 
 \end{enumerate}  \\
 
 2015 -- 2018 &
 \textbf{Methylation and serum response factor mediated in the regulation of gene ARRDC3 in breast cancer} \newline
-Mentor: Sheyu Lin (Nantong University).
+Mentor: Sheyu Lin (Nantong University)
 \begin{itemize}
 	\item Cell culture and viability, western blot, and animal experiments were successfully performed.
 \end{itemize}
@@ -186,7 +188,7 @@ Mentor: Sheyu Lin (Nantong University).
 
 % --- Section: Teaching experience ---
 
-\begin{SectionTable}{\headingfont Teaching experience}
+\begin{SectionTable}{\headingfont Teaching Experience}
 Fall 2019 & 
 \textbf{Biochemical experiment course, Teaching assistant(Fudan University)} \\
 
@@ -199,10 +201,10 @@ Summer  2020 &
 
 % --- Section: work experience ---
 
-\begin{SectionTable}{\headingfont Industry experience}
+\begin{SectionTable}{\headingfont Work Experience}
 
 2022.09-present &
-\textbf{Abcam (Shanghai) Trading Co., LTD. (Mission Support)} -- Shanghai, China
+\textbf{Abcam (Mission Support)} -- Shanghai, China
 \begin{itemize}[itemsep=4pt, label={\textbullet}, parsep=1pt]
 	\item Handling customer inquiries through phone calls and responding to product information inquiries, recommending appropriate products, and offering optimization suggestions to resolve customer experiment issues
 	\item Managed customer complaint correspondence, offered solutions for customer experiments, maintained communication with customers, and effectively resolved customer concerns
@@ -212,27 +214,20 @@ Summer  2020 &
 
 2021.07-2022.07 &
 \textbf{Fudan University  (Research Assistant)} -- Shanghai, China \newline
-Focus of research is on the pathogenesis of metabolic cardiovascular diseases, particularly in the studies of type 2 diabetes and atherosclerosis. 
+Focus on the pathogenesis of metabolic cardiovascular diseases, particularly in the studies of type 2 diabetes and atherosclerosis. 
 \begin{itemize}[itemsep=4pt, label={\textbullet}, parsep=1pt]
 	\item Supporting the head of the laboratory in overseeing daily administrative and financial operations
 	\item Conducting a variety of biology experiments, including cell line establishment, analysis of cell proliferation and apoptosis, packaging of AAV and lentivirus, vector construction, Western blotting, immunofluorescence analysis of cells and tissues, cryosectioning and HE staining, modeling and evaluation of atherosclerosis, and performing glucose tolerance and insulin tolerance tests.
 \end{itemize}
 \end{SectionTable}
 
-\begin{SectionTable}{\headingfont Technical skills}
+\begin{SectionTable}{\headingfont Technical Skills}
 
 & \textbf{Software} \newline
 SnapGene, Premier 5.0, FlowJo, Graphpad Prism, Photoshop, Adobe Illustrator.\\
 
-& \textbf{Software}
-\begin{itemize}[nosep, label={\textbullet}]
-	\item First item
-	\item Second item
-	\item Third item
-  \end{itemize} \\
-
 & \textbf{Techniques} \newline
-Cell culture, western blot, Cell culture, cell proliferation, cell apoptosis, cell cycle, cell invasion, transwell, lentivirus/AAV packaging, Western blot, qPCR, IHC, ICC, flow cytometry, co-IP, EMSA, ChIP, ELISA, tail infection, peritoneal injection, Canthus venous plexus injection, cryosectioning, plasmid construction, platelet separation, platelet aggregation, clot retraction, ferric chloride-induced mesenteric arterial injury model, mouse tail bleeding, GST-pull down, expression and purification of prokaryotic proteins, transcriptome sequencing. \\
+Western blot, Cell culture, Cell proliferation, Cell apoptosis, Cell cycle, Cell invasion, Transwell, Lentivirus/AAV packaging, qPCR, IHC, ICC, Flow cytometry, Magnetic bead sorting, Co-IP, EMSA, ChIP, ELISA, GST-pull down, Tail infection, Peritoneal injection, Canthus venous plexus injection, Cryosectioning, Plasmid construction, Platelet separation, Platelet aggregation, Clot retraction, Ferric chloride-induced mesenteric arterial injury model, Mouse tail bleeding, Expression and purification of prokaryotic proteins, Transcriptome sequencing. \\
 \end{SectionTable}
 
 % --- End of CV! ---
